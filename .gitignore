@@ -1,0 +1,19 @@
+# OS files
+.DS_Store
+Thumbs.db
+
+# Editors / IDEs
+.vscode/
+.idea/
+
+# Logs
+*.log
+
+# Environment files (future-proof)
+.env
+.env.*
+
+# Node / build tools (if ever added)
+node_modules/
+dist/
+build/

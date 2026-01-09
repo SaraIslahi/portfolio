@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Sara Islahi | Portfolio</title>
+
+    <link rel="stylesheet" href="assets/css/style.css" />
+  </head>
+
+  <body>
+    <!-- NAV -->
+    <div class="nav">
+      <div class="container nav-inner">
+        <div class="brand">
+          <div class="dot"></div>
+          <div>Sara Islahi</div>
+        </div>
+
+        <div class="nav-links">
+          <a href="#about">About</a>
+          <a href="#skills">Skills</a>
+          <a href="#projects">Projects</a>
+          <a href="#contact">Contact</a>
+        </div>
+      </div>
+    </div>
+
+    <main class="container">
+      <!-- HERO -->
+      <section class="hero">
+        <div class="hero-grid">
+          <div class="card hero-main">
+            <div class="badge"><span></span> Available for opportunities</div>
+
+            <h1>Hello, I'm Sara 👋</h1>
+            <p class="subtitle">
+              Aspiring Software Developer with a strong interest in
+              <b>Business Intelligence</b>, <b>Data Engineering</b>, and
+              building clean, reliable web apps with <b>Python</b> and
+              <b>Django</b>.
+            </p>
+
+            <div class="cta">
+              <a class="btn primary" href="#projects">See my projects →</a>
+              <a class="btn" href="#contact">Contact me</a>
+            </div>
+          </div>
+
+          <div class="card hero-side">
+            <img
+              src="assets/images/me.jpeg"
+              alt="Sara photo"
+              class="profile-pic"
+            />
+            <div class="mini">
+              <h3>Python • Django • BI</h3>
+              <p>Based in Morocco • Open to remote</p>
+
+              <div class="chips">
+                <div class="chip">Python</div>
+                <div class="chip">Django</div>
+                <div class="chip">PostgreSQL</div>
+                <div class="chip">SQL</div>
+                <div class="chip">BI / KPIs</div>
+                <div class="chip">Railway Deploy</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ABOUT -->
+      <section class="section" id="about">
+        <div class="section-title">
+          <h2>About</h2>
+          <p>A little bit about me</p>
+        </div>
+
+        <div class="item">
+          <h3>👩‍💻 My story</h3>
+          <p>
+            I’m a motivated learner preparing for a Software Engineering
+            Master’s degree. I enjoy building practical projects that combine
+            software development and data analytics, and I’m especially
+            interested in BI dashboards, data pipelines, and production
+            deployment.
+          </p>
+        </div>
+      </section>
+
+      <!-- SKILLS (UPDATED) -->
+      <section class="section" id="skills">
+        <div class="section-title">
+          <h2>Skills</h2>
+          <p>What I can build and deliver</p>
+        </div>
+
+        <div class="grid-3">
+          <div class="item">
+            <h3>Backend</h3>
+            <p>Python, Django, forms, security basics, server-side rendering</p>
+            <ul>
+              <li>CSV upload handling & validation</li>
+              <li>Environment-based settings (production vs local)</li>
+              <li>Gunicorn + production configuration</li>
+            </ul>
+          </div>
+
+          <div class="item">
+            <h3>Data & Analytics</h3>
+            <p>SQL, KPI computation, aggregation, trends</p>
+            <ul>
+              <li>Star schema (fact + dimensions)</li>
+              <li>ELT pipeline: Extract → Load → Transform → Analyze</li>
+              <li>Data cleaning: null handling, type coercion</li>
+            </ul>
+          </div>
+
+          <div class="item">
+            <h3>Deployment & Tools</h3>
+            <p>Git/GitHub, PostgreSQL, Railway deployment</p>
+            <ul>
+              <li>Railway Postgres + DATABASE_URL</li>
+              <li>Static files in production (WhiteNoise)</li>
+              <li>Debugging production issues (CSRF/static/DB)</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <!-- PROJECTS (UPDATED) -->
+      <section class="section" id="projects">
+        <div class="section-title">
+          <h2>Projects</h2>
+          <p>Things I built</p>
+        </div>
+
+        <div class="projects">
+          <!-- NEW: Enterprise BI Dashboard -->
+          <div class="project">
+            <div class="top">
+              <h3 style="margin: 0">Enterprise BI Dashboard</h3>
+              <span class="pill">Django • PostgreSQL</span>
+            </div>
+            <p>
+              A full-stack Business Intelligence dashboard with CSV ingestion,
+              KPI computation (Revenue, Orders, AOV), and interactive charts.
+              Built on a star schema warehouse and deployed on Railway.
+            </p>
+
+            <div class="project-links">
+              <a
+                class="linkbtn primary"
+                href="https://enterprise-bi-dashboard-production.up.railway.app"
+                target="_blank"
+                rel="noreferrer"
+                >Live Demo ↗</a
+              >
+              <a
+                class="linkbtn"
+                href="https://github.com/SaraIslahi/enterprise-bi-dashboard"
+                target="_blank"
+                rel="noreferrer"
+                >GitHub ↗</a
+              >
+            </div>
+
+            <p style="margin-top: 10px; font-weight: 800; color: #7c5cff">
+              ▶ Upload a CSV to generate KPIs & charts
+            </p>
+          </div>
+
+          <!-- Portfolio -->
+          <div class="project">
+            <div class="top">
+              <h3 style="margin: 0">Portfolio Website</h3>
+              <span class="pill">Django</span>
+            </div>
+            <p>
+              A clean personal website to present my skills, projects, and
+              contact information.
+            </p>
+          </div>
+
+          <!-- Translation App -->
+            <div class="project" style="cursor: pointer">
+              <div class="top">
+                <h3 style="margin: 0">Translation App</h3>
+                <span class="pill">Python</span>
+              </div>
+              <p>
+                A Python project that translates user input text and converts
+                the translated text into audio using text-to-speech.
+              </p>
+              <a
+                class="linkbtn primary"
+                href="https://translation-web-app-production.up.railway.app/translate/"
+                target="_blank"
+                rel="noreferrer"
+                >Live Demo ↗</a
+              >
+              <a
+                class="linkbtn"
+                href="https://github.com/SaraIslahi/translation-web-app/tree/main"
+                target="_blank"
+                rel="noreferrer"
+                >GitHub ↗</a
+              >
+       
+            </div>
+          </a>
+
+          <!-- More -->
+          <div class="project">
+            <div class="top">
+              <h3 style="margin: 0">More Coming Soon</h3>
+              <span class="pill">In progress</span>
+            </div>
+            <p>
+              Stay tuned for more projects as I continue to learn and build!
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <!-- CONTACT -->
+      <section class="section" id="contact">
+        <div class="section-title">
+          <h2>Contact</h2>
+          <p>Let’s talk</p>
+        </div>
+
+        <div class="item">
+          <h3>📩 Email</h3>
+          <p><b>islahi.sarah3@gmail.com</b></p>
+
+          <div class="cta" style="margin-top: 14px">
+            <a class="btn primary" href="mailto:islahi.sarah3@gmail.com"
+              >Email me</a
+            >
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <div class="container">© 2025 Sara Islahi</div>
+    </footer>
+    <script src="assets/js/main.js"></script>
+
+  </body>
+</html>
